@@ -22,12 +22,16 @@ export default function HomeScreen() {
         <HelloWave />
       </ThemedView>
       <View>
+        <Text style={styles.h3}>Custom Components</Text>
         <CheckRow text="Item 001" color="red"/>
         <CheckRow text="Item 002" color="blue"/>
         <CheckRow text="Item 003" color="green"/>
         <CheckRow text="Item 004" color="purple"/>
         <CheckRow text="Item 005" color="gray"/>
         <CheckRow text="Item 006" color="orange"/>
+      </View>
+      <View>
+        <Text style={styles.h3}>Material UI</Text>
       </View>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 1: Try it</ThemedText>
@@ -80,4 +84,9 @@ const styles = StyleSheet.create({
     left: 0,
     position: 'absolute',
   },
+  h3: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 5
+  }
 });
