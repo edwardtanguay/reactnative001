@@ -1,9 +1,11 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import { Image, StyleSheet, Platform, View, Text } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import { Ionicons } from '@expo/vector-icons';
+
 
 export default function HomeScreen() {
   return (
@@ -19,10 +21,16 @@ export default function HomeScreen() {
         <ThemedText type="title">Welcome!</ThemedText>
         <HelloWave />
       </ThemedView>
+      <View>
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap:5 }}>
+          <Ionicons name="checkmark-circle" size={32} color="red" />
+          <Text style={{fontSize: 20}}>Test 001</Text>
+        </View>
+      </View>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 1: Try it</ThemedText>
         <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
+          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see TESTING7777 changes.
           Press{' '}
           <ThemedText type="defaultSemiBold">
             {Platform.select({ ios: 'cmd + d', android: 'cmd + m' })}
@@ -59,6 +67,9 @@ const styles = StyleSheet.create({
   stepContainer: {
     gap: 8,
     marginBottom: 8,
+    backgroundColor: '#eee',
+    padding: 10,
+    borderRadius: 10
   },
   reactLogo: {
     height: 178,

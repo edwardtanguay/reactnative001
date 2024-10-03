@@ -1,0 +1,18 @@
+
+
+
+
+      <ThemedView style={styles.titleContainer}>
+        <View>
+        <ThemedText type="title">Welcome!</ThemedText>
+        <HelloWave />
+        </View>
+        <View style={{flexDirection: 'column'}}>
+          <Text>
+          <Ionicons name="checkmark-circle" size={32} color="red"/>
+          </Text>
+          <Text>
+          <Ionicons name="checkmark-circle" size={32} color="red"/>
+          </Text>
+        </View>
+      </ThemedView>
