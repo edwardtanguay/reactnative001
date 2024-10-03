@@ -4,7 +4,7 @@ import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
-import { Ionicons } from '@expo/vector-icons';
+import { CheckRow } from '@/components/CheckRow';
 
 
 export default function HomeScreen() {
@@ -22,10 +22,11 @@ export default function HomeScreen() {
         <HelloWave />
       </ThemedView>
       <View>
-        <View style={{ flexDirection: 'row', alignItems: 'center', gap:5 }}>
-          <Ionicons name="checkmark-circle" size={32} color="red" />
-          <Text style={{fontSize: 20}}>Test 001</Text>
-        </View>
+        <CheckRow text="Item 001" color="red"/>
+        <CheckRow text="Item 002" color="blue"/>
+        <CheckRow text="Item 003" color="green"/>
+        <CheckRow text="Item 004" color="purple"/>
+        <CheckRow text="Item 005" color="orange"/>
       </View>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 1: Try it</ThemedText>
