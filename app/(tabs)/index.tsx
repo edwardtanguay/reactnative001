@@ -5,6 +5,7 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { CheckRow } from '@/components/CheckRow';
+import { MaterialUiShowcase } from '@/components/MateriaUiShowcase';
 
 
 export default function HomeScreen() {
@@ -32,7 +33,9 @@ export default function HomeScreen() {
       </View>
       <View>
         <Text style={styles.h3}>Material UI</Text>
+        <MaterialUiShowcase/>
       </View>
+        <Text style={styles.h3}>Original Page</Text>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 1: Try it</ThemedText>
         <ThemedText>
@@ -73,9 +76,7 @@ const styles = StyleSheet.create({
   stepContainer: {
     gap: 8,
     marginBottom: 8,
-    backgroundColor: '#eee',
     padding: 10,
-    borderRadius: 10
   },
   reactLogo: {
     height: 178,
@@ -87,6 +88,10 @@ const styles = StyleSheet.create({
   h3: {
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 5
+    marginBottom: 5,
+    backgroundColor: '#ddd',
+    padding: 2,
+    paddingLeft: 6,
+    borderRadius: 5
   }
 });
