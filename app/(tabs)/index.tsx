@@ -26,7 +26,8 @@ export default function HomeScreen() {
         <CheckRow text="Item 002" color="blue"/>
         <CheckRow text="Item 003" color="green"/>
         <CheckRow text="Item 004" color="purple"/>
-        <CheckRow text="Item 005" color="orange"/>
+        <CheckRow text="Item 005" color="gray"/>
+        <CheckRow text="Item 006" color="orange"/>
       </View>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 1: Try it</ThemedText>
