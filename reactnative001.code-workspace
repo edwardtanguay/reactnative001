@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/node_modules": true
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"dbaeumer.vscode-eslint",
+			"esbenp.prettier-vscode",
+			"ms-vscode.vscode-typescript-tslint-plugin"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Development",
+				"type": "shell",
+				"command": "npm i && npm run start",
+				"promptOnClose": true,
+				"presentation": {
+					"panel": "shared"
+				},
+				"problemMatcher": []
+			}
+		]
+	}
+}
